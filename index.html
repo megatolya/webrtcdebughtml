@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>webrtcdebughtml</title>
+        <style>
+body, html {
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    display: flex;
+}
+
+        </style>
+    </head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="./node_modules/socket.io-client/dist/socket.io.js"></script>
+        <script src="./app.js"></script>
+        <div>
+            <video width="50%" id="local"></video>
+            <video width="50%" id="remote"></video>
+        </div>
+    </body>
+</html>
